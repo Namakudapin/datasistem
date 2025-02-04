@@ -2,9 +2,9 @@ import Sidebar from "@/components/sidebar";
 
 export default function HomeLayout({ children }) {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex h-screen overflow-hidden">
       <Sidebar />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 overflow-auto">{children}</main>
     </div>
   );
 }

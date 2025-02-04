@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Calendar, ChevronLeft, ChevronRight, ListTodo } from 'lucide-react';
+import ProjectTable from './components/ProjectTable';
 
 const HomePage = () => {
   const handleSprintClick = (sprintTitle) => {
@@ -9,8 +10,8 @@ const HomePage = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen p-6 overflow-x-hidden">
-      <div className="max-w-6xl mx-auto">
+<div className="bg-gray-100 min-h-screen p-6 pt-20 overflow-x-hidden">
+<div className="max-w-6xl mx-auto">
         <h1 className="text-2xl font-semibold mb-4 text-black">Good afternoon, Haidar</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -80,7 +81,10 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        
+        <h1 className='mt-6 text-black font-bold text-3xl'>Tabel Project</h1>
+          <div className='mt-4 text-black font-bold text-3xl'>
+            <ProjectTable />
+          </div>
       </div>
     </div>
   );

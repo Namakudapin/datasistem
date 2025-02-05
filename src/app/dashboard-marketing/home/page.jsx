@@ -10,11 +10,10 @@ const HomePage = () => {
   };
 
   return (
-<div className="bg-gray-100 min-h-screen p-6 pt-20 overflow-x-hidden">
-<div className="max-w-6xl mx-auto">
+  <div className="bg-[#f4f8ff] min-h-screen p-6 pt-20 overflow-x-hidden">
+  <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl font-semibold mb-4 text-black">Good afternoon, Haidar</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
           <div className="bg-white rounded-lg p-5 shadow-md border border-gray-200 h-[320px] overflow-hidden">
             <h2 className="text-lg font-medium mb-3 flex items-center text-black">
               <ListTodo className="w-5 h-5 mr-2" />
@@ -81,8 +80,16 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <h1 className='mt-6 text-black font-bold text-3xl'>Tabel Project</h1>
-          <div className='mt-4 text-black font-bold text-3xl'>
+        <div className="flex justify-between items-center">
+          <h1 className="mt-6 text-black font-bold text-3xl">Tabel Project</h1>
+          <a
+            href="/dashboard-marketing/task"
+            className="mt-6 text-blue-600 font-semibold text-lg hover:underline hover:text-blue-800 transition duration-300"
+          >
+            See all →
+          </a>
+        </div>
+          <div className='mt-4'>
             <ProjectTable />
           </div>
       </div>

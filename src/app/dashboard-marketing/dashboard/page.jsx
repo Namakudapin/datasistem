@@ -35,12 +35,11 @@ const DashboardPage = () => {
     };
 
     return (
-        <div className="bg-gray-50 min-h-screen p-6 pt-20 overflow-x-hidden">
+        <div className="bg-[#f4f8ff] min-h-screen p-6 pt-16 overflow-x-hidden">
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-2xl font-semibold mb-4 text-gray-800">Good afternoon, Haidar</h1>
                 
                 <div className="bg-white rounded-lg shadow-lg border border-gray-100 p-6">
-                    {/* Header */}
                     <div className="flex justify-between items-center mb-6">
                         <h2 className="text-xl font-semibold text-gray-800">
                             Project Analytics

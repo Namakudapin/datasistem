@@ -1,22 +1,22 @@
 "use client";
 
 import React from 'react';
-import { Calendar, ChevronLeft, ChevronRight, ListTodo } from 'lucide-react';
+import { Calendar, ChevronLeft, ChevronRight, ListTodo, HistoryIcon} from 'lucide-react';
 
-const HomePage = () => {
+const HomeClass = () => {
   const handleSprintClick = (sprintTitle) => {
     console.log(`Navigating to ${sprintTitle}`);
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen p-6 overflow-x-hidden">
+    <div className=" min-h-screen p-6 overflow-x-hidden">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl font-semibold mb-4 text-black">Good afternoon, Haidar</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div className="bg-white rounded-lg p-5 shadow-md border border-gray-200 h-[320px] overflow-hidden">
-            <h2 className="text-lg font-medium mb-3 flex items-center text-black">
-              <ListTodo className="w-5 h-5 mr-2" />
+            <h2 className="text-xm font-poppins mb-3 flex items-center text-black">
+              <HistoryIcon className="w-5 h-5 mr-2" />
               Recents
             </h2>
             <div className="max-h-[240px] overflow-y-auto space-y-2 pr-2">
@@ -35,12 +35,10 @@ const HomePage = () => {
                 >
                   <div className="flex items-center justify-between">
                     <div>
-                      <span className="font-medium text-black group-hover:text-indigo-600">
+                      <span className="font-poppins text-gray-700 text-sm group-hover:text-indigo-600">
                         {item.title}
                       </span>
-                      <div className="text-sm text-gray-600">
-                        in {item.folder}
-                      </div>
+                 
                     </div>
                     <span className="text-xs text-gray-500">
                       {item.date}
@@ -81,22 +79,10 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Name Project</h5>
-            </a>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Nama marketing</p>
-            <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                View Project
-                <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
-        </div>
 
       </div>
     </div>
   );
 };
 
-export default HomePage;    
+export default HomeClass;    

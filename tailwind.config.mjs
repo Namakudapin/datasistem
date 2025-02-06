@@ -7,11 +7,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'manrope': ['Manrope', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

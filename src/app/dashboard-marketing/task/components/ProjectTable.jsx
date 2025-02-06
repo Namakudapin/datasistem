@@ -70,6 +70,39 @@ const ProjectTable = () => {
         status: "In Progress",
         notes: "Waiting for final approva aaaaaaaal"
       },
+      {
+        marketing: "Emma White",
+        programmer: "David Lee",
+        dateJoined: "2024-02-05",
+        business: "designhub.co",
+        package: "Basic",
+        queueNumber: 4,
+        schedule: "2024-03-10",
+        status: "In Progress",
+        notes: "Waiting for final approva aaaaaaaal"
+      },
+      {
+        marketing: "Emma White",
+        programmer: "David Lee",
+        dateJoined: "2024-02-05",
+        business: "designhub.co",
+        package: "Basic",
+        queueNumber: 4,
+        schedule: "2024-03-10",
+        status: "In Progress",
+        notes: "Waiting for final approva aaaaaaaal"
+      },
+      {
+        marketing: "Emma White",
+        programmer: "David Lee",
+        dateJoined: "2024-02-05",
+        business: "designhub.co",
+        package: "Basic",
+        queueNumber: 4,
+        schedule: "2024-03-10",
+        status: "In Progress",
+        notes: "Waiting for final approva aaaaaaaal"
+      },
       
     
   ];
@@ -77,7 +110,7 @@ const ProjectTable = () => {
   const tableRef = useRef(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5; // Jumlah item per halaman
+  const itemsPerPage = 10; // Jumlah item per halaman
 
   const scrollRight = () => {
     if (tableRef.current) {
